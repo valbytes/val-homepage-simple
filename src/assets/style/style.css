@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --primary: #0f97c5cf;
+	--strength: 0.12;
+	--strong-color: oklch(from var(--primary) calc(l - 0.12) c h);
+	--soft-color: oklch(from var(--primary) calc(l + 0.4) c h);
+	--accent-color: oklch(from var(--primary) l c calc(h + 20));
+	--brand-border: rgb(from var(--primary) r g b / 0.18);
+	--brand-shadow: rgb(from var(--brand) r g b / 0.3);
+
+}
+
+.pixel-text {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+

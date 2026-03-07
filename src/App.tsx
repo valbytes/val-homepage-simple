@@ -1,14 +1,13 @@
 import './App.css'
+import Header from './assets/pageSections/Header/Header.tsx';
+import './assets/style/style.css';
 
 function App() {
 
   return (
 
     <div>
-      <header>
-        <div className="logo">Val Bytes</div>
-        <div className="nav">Nav</div>
-      </header>
+      <Header />
       <main>
         <section className="hero">Hero</section>
         <section className="services">Services</section>
