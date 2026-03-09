@@ -21,11 +21,11 @@ function PortfolioItem(props: { title: string; description: string; image: strin
                 <h3>{props.title}</h3>
                 <p>{props.description}</p>
             </CardContent>
-            <CardActionArea>
-                <CardActions>
-                    <Button href={props.link} target=" _blank" FullWidth="true" variant="outlined">Visit Site</Button>
-                </CardActions>
-            </CardActionArea>
+
+            <CardActions>
+                <Button href={props.link} target=" _blank" FullWidth="true" variant="contained">Visit Site</Button>
+            </CardActions>
+
         </Card >
     );
 }
