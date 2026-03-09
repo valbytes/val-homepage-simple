@@ -2,7 +2,7 @@
 // Page Section Components
 import Header from './assets/pageSections/Header/Header.tsx';
 import About from './assets/pageSections/About/About.tsx';
-import Services from './assets/pageSections/Services/Services.tsx';
+import Portfolio from './assets/pageSections/Portfolio/Portfolio.tsx';
 
 // MUI Components
 import Container from '@mui/material/Container';
@@ -18,7 +18,7 @@ function App() {
         <Header />
         <main>
           <section className="hero">Hero</section>
-          <section className="services"><Services /></section>
+          <section className="portfolio"><Portfolio /></section>
           <section className="contact">Contact</section>
           <section className="about"><About /></section>
         </main>

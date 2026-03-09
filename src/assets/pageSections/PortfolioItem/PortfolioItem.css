@@ -1,0 +1,15 @@
+.portfolio-item {
+    flex: 1 1 100%;
+}
+
+@media (min-width: 992px) {
+    .portfolio-item {
+        flex: 0 0 29%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .portfolio-item {
+        flex: 0 0 22%;
+    }
+}

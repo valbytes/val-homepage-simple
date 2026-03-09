@@ -1,0 +1,14 @@
+.portfolio-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    /* flex-direction: column; */
+}
+
+/* @media (min-width: 992px) {
+    .portfolio-stack {
+        flex-direction: row;
+    }
+} */
