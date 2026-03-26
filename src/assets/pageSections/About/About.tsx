@@ -9,7 +9,7 @@ function About() {
                 <Grid size={{ xs: 12, sm: 4 }} textAlign={{ xs: "center", sm: "left" }}>
                     <div><img src={valPixel} alt="Val" /></div>
                 </Grid>
-                <Grid size={{ xs: 12, sm: 8 }} textAlign={{ xs: "center", sm: "left" }}>
+                <Grid size={{ xs: 12, sm: 8 }} textAlign="left">
                     <div>
                         <p>Hi, I'm Valerie!</p>
                         <p>I'm a web developer with a passion for creating beautiful, functional, and maintainable websites. I'm knowledgable in a great many web technologies. Please <a href="#contact-anchor">reach out</a> if you would like to work with me!</p>
