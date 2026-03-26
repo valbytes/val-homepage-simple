@@ -20,5 +20,8 @@
 @media (max-width: 500px) {
     .footer-content {
         flex-direction: column;
+        gap: 0.5rem;
     }
+    .footer-content > * {margin: 0;}
+    .footer-content > *:last-child {margin-bottom: 10px;}
 }
