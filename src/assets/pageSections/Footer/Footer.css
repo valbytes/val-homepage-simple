@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .footer-content {
     gap: 2rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.footer-content h2 {
+    text-align: center;
+    font-family: "Press Start 2P", serif;
 }
 
 .footer-content>section {
