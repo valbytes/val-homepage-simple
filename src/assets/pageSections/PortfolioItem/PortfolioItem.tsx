@@ -16,13 +16,13 @@ function PortfolioItem(props: { title: string; description: string; image: strin
                 image={props.image}
                 alt={props.title}
             />
-            <CardContent>
+            <CardContent sx={{ paddingBottom: "8px" }}>
                 <h3>{props.title}</h3>
                 <p>{props.description}</p>
             </CardContent>
 
             <CardActions>
-                <Button href={props.link} target=" _blank" FullWidth="true" variant="contained">Visit Site</Button>
+                <Button href={props.link} sx={{ margin: "auto" }} target=" _blank" FullWidth="true" variant="contained">Visit Site</Button>
             </CardActions>
 
         </Card >
