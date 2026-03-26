@@ -5,6 +5,7 @@ import About from './assets/pageSections/About/About.tsx';
 import Portfolio from './assets/pageSections/Portfolio/Portfolio.tsx';
 import Contact from './assets/pageSections/Contact/Contact.tsx';
 import Hero from './assets/pageSections/Hero/Hero.tsx';
+import Footer from './assets/pageSections/Footer/Footer.tsx';
 
 // MUI Components
 import Container from '@mui/material/Container';
@@ -37,7 +38,7 @@ function App() {
           </section>
         </main>
         <footer>
-          <div className="footer-content">Footer</div>
+          <div className="footer-content"><Footer /></div>
         </footer>
       </Container>
     </div >
