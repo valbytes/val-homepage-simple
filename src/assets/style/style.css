@@ -27,3 +27,7 @@ body {
 main > section {
     padding: 30px;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {background: #252322; color: #fff;}
+}

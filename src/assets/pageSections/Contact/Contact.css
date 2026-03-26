@@ -10,3 +10,21 @@
 .numberInputWrapper>div {
     flex: 1;
 }
+
+@media (prefers-color-scheme: dark) {
+  label {color: #fff;}
+  select, input, textarea {
+    color: #000;
+    background: #fff!important;
+    border-radius: 10px!important;
+  }
+
+  select option {
+    color: #000;
+    background: #fff!important;
+  }
+  form p {
+    color: #fff!important;
+  }
+
+}
