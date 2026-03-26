@@ -4,6 +4,7 @@ import Header from './assets/pageSections/Header/Header.tsx';
 import About from './assets/pageSections/About/About.tsx';
 import Portfolio from './assets/pageSections/Portfolio/Portfolio.tsx';
 import Contact from './assets/pageSections/Contact/Contact.tsx';
+import Hero from './assets/pageSections/Hero/Hero.tsx';
 
 // MUI Components
 import Container from '@mui/material/Container';
@@ -19,7 +20,7 @@ function App() {
       <Container>
         <Header />
         <main>
-          <section className="hero">Hero</section>
+          <section className="hero"><Hero /></section>
           <section className="portfolio">
             <div id="portfolio-anchor"></div>
             <h2>Portfolio</h2>
