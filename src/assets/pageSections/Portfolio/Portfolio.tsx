@@ -1,10 +1,10 @@
 import PortfolioItem from "../PortfolioItem/PortfolioItem";
 import { Stack } from "@mui/material";
 
-import funTownRV from "./img/funtown-rv.png";
-import newellCoach from "./img/newell.png";
-import waterdogRV from "./img/waterdog-rv.png";
-import southernRV from "./img/southern-rv.png";
+import funTownRV from "../../img/funtown-rv.png";
+import newellCoach from "../../img/newell.png";
+import waterdogRV from "../../img/waterdog-rv.png";
+import southernRV from "../../img/southern-rv.png";
 
 import './Portfolio.css';
 
