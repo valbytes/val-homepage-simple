@@ -1,22 +1,45 @@
+import { useState, useEffect } from 'react';
 import PortfolioItem from "../PortfolioItem/PortfolioItem";
 import { Stack } from "@mui/material";
 
-import funTownRV from "../../img/funtown-rv.png";
-import newellCoach from "../../img/newell.png";
-import waterdogRV from "../../img/waterdog-rv.png";
-import southernRV from "../../img/southern-rv.png";
-
 import './Portfolio.css';
 
+interface PortfolioData {
+    id: string | number;
+    title: string;
+    description: string;
+    imageUrl: string;
+    url: string;
+}
+
+async function getPortfolioItems() {
+    const response = await fetch('http://nodered.localhost/db');
+    const data = await response.json();
+
+    let portfolioData: PortfolioData[] = [];
+    for (let i = 0; i < data.length; i++) {
+        portfolioData.push({
+            id: data[i].id || i, // Fallback to index if no ID to satisfy React's key requirement
+            title: data[i].title,
+            description: data[i].description,
+            imageUrl: data[i].imageUrl,
+            url: data[i].url,
+        });
+    }
+    return portfolioData;
+}
+
 function Portfolio() {
+    const [portfolioData, setPortfolioData] = useState<PortfolioData[]>([]);
+    useEffect(() => {
+        getPortfolioItems().then(data => setPortfolioData(data));
+    }, []);
+
     return (
         <Stack gap={4} direction="row" className="portfolio-stack">
-            <PortfolioItem title="FunTown RV" description="Website for FunTown RV dealership group." image={funTownRV} link="https://funtownrv.com" />
-            <PortfolioItem title="Newell Coach" description="Website for Newell Coach RV Manufacturers." image={newellCoach} link="https://newellcoach.com" />
-            <PortfolioItem title="Waterdog RV" description="Website for Waterdog RV dealership." image={waterdogRV} link="https://waterdogrv.com" />
-            <PortfolioItem title="Southern RV" description="Website for Southern RV dealership." image={southernRV} link="https://southernrv.com" />
-            {/* <PortfolioItem title="Mike Thompson's RV" description="Description" image="./img/mike-thompsons-rv.png" /> */}
-            {/* <PortfolioItem title="CampNorth RV" description="Description" image="./img/camp-north-rv.png" /> */}
+            {portfolioData.map((item) => (
+                <PortfolioItem key={item.id} title={item.title} description={item.description} image={`src/assets/${item.imageUrl}`} link={item.url} />
+            ))}
         </Stack>
     );
 }
