@@ -38,7 +38,7 @@ function Portfolio() {
     return (
         <Stack gap={4} direction="row" className="portfolio-stack">
             {portfolioData.map((item) => (
-                <PortfolioItem key={item.id} title={item.title} description={item.description} image={`src/assets/${item.imageUrl}`} link={item.url} />
+                <PortfolioItem key={item.id} title={item.title} description={item.description} image={`src/assets/img/${item.imageUrl}`} link={item.url} />
             ))}
         </Stack>
     );
