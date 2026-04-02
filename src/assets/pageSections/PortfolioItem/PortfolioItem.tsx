@@ -22,7 +22,7 @@ function PortfolioItem(props: { title: string; description: string; image: strin
             </CardContent>
 
             <CardActions>
-                <Button href={props.link} sx={{ margin: "auto" }} target=" _blank" FullWidth="true" variant="contained">Visit Site</Button>
+                <Button href={props.link} sx={{ margin: "auto" }} target="_blank" fullWidth={true} variant="contained">Visit Site</Button>
             </CardActions>
 
         </Card >

@@ -49,7 +49,7 @@ function Contact() {
                 flexGrow: "1"
             }}
         >
-            <Grid size="{12}" sx={{ display: "flex", gap: "25px", flexDirection: "column" }} >
+            <Grid size={12} sx={{ display: "flex", gap: "25px", flexDirection: "column" }} >
                 <FormGroup sx={{ gap: "15px" }}>
                     <TextField className="formInput" name="name" label="Name" required={true} sx={{ flexGrow: "1" }} />
                     <TextField className="formInput" name="email" type="email" label="Email" required={true} sx={{ flexGrow: "1" }} />

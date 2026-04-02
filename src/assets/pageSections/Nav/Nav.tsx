@@ -1,13 +1,14 @@
+import { Link } from '@tanstack/react-router';
 import './Nav.css';
 
 const Nav = () => {
     return (
         <nav>
             <ul>
-                <li><a href="#top-anchor">Home</a></li>
-                <li><a href="#portfolio-anchor">Portfolio</a></li>
-                <li><a href="#about-anchor">About</a></li>
-                <li><a href="#contact-anchor">Contact</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/" hash="portfolio-anchor">Portfolio</Link></li>
+                <li><Link to="/" hash="about-anchor">About</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
             </ul>
         </nav>
     );
