@@ -25,3 +25,5 @@ dist-ssr
 README.md
 docker-compose.yml
 storage/*
+.env
+.env.example
